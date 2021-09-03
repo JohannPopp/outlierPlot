@@ -1,16 +1,27 @@
 Package: outlierPlot
-Title: What the Package Does (One Line, Title Case)
+Title: Interactive Diagnostic Plots for Linear and Logistic Models
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Johann",
+           family = "Popp",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+           email = "johann.popp@posteo.de")
+Description: 
+    Produces a set of interactive diagnostic plots. Brushing outstandig
+    cases in one plot highlights the same cases in the other plots.
+    Raw data of the brushed cases is shown. An alternative model excluding
+    the brushed cases is calculated and compared to the original model.
+License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Depends: 
+    R (>= 3.0.2), stats
+Imports: 
+    ggplot2 (>= 2.2.1),
+    shiny (>= 1.0.5),
+    grid,
+    htmltools
+URL: https://github.com/JohannPopp/outlierPlot
+
